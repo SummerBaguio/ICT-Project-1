@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Japanese Food</title>
+
+</head>
+
+<body>
+
+    <h2>Yummy Japanese Food 🍱</h2>
+
+    <marquee>
+        <p>konichiwa！<sup>arigathanks</sup></p>
+    </marquee>
+
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/050/839/926/small_2x/yatai-japanese-food-stall-cartoon-illustration-vector.jpg"
+         width="450 px"
+         height="450">
+
+    <h3>SKU Generator</h3>
+
+    <label>Food Category:</label>
+
+    <select id="category">
+
+        <option value="DES">Dessert</option>
+        <option value="RIC">Rice</option>
+        <option value="MEA">Meal</option>
+
+    </select>
+
+    <br><br>
+
+    <label>Food Name:</label>
+
+    <select id="product">
+
+        <option value="DAN">Dango 🍡</option>
+        <option value="DOR">Dorayaki 🥞</option>
+        <option value="MOC">Mochi 🍡</option>
+        <option value="ONI">Onigiri 🍙</option>
+        <option value="GYO">Gyudon 🍚</option>
+        <option value="CUR">Japanese Curry 🍛</option>
+        <option value="RAM">Ramen 🍜</option>
+        <option value="SUS">Sushi 🍣</option>
+
+    </select>
+
+    <br><br>
+
+    <label>Stock Quantity:</label>
+
+    <input type="number" id="stock">
+
+    <br><br>
+
+    <button py-click="generate_sku">
+        Generate SKU
+    </button>
+
+    <h3>Your SKU</h3>
+
+    <p id="sku">SKU: </p>
+
+    <br>
+
+    <a href="index.html">Go to Receipt Generator</a>
+
+    <link rel="stylesheet"
+          href="https://pyscript.net/releases/2024.1.1/core.css">
+
+    <script type="module"
+            src="https://pyscript.net/releases/2024.1.1/core.js">
+    </script>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+
+</html>
